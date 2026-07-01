@@ -321,7 +321,7 @@ def main():
     target_files = generate_target_files(month_name="JANUARI, year=2027, prefix="PM")
     print(f"\n📁 Daftar file target ({len(target_files)}):")
     print(target_files)
-
+ 
     for idx, dest_file_path in enumerate(target_files, start=1):
         print(f"\n({idx}/{len(target_files)}) Mulai update {dest_file_path}...")
         update_single_file(g, dest_file_path, base_no_footer, force_expired=force_expired)
